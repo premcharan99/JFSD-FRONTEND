@@ -1,0 +1,170 @@
+/* Container */
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f0f4f8;
+  padding: 20px;
+  width: 100%;
+}
+
+/* Images */
+.image-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.b-image {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+/* Signup Box */
+.signup-box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  border-top: 6px solid #002855;
+}
+
+.signup-title {
+  font-size: 28px;
+  color: #002855;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* User Type Selection */
+.user-type-section {
+  margin-bottom: 20px;
+}
+
+.user-type-label {
+  display: block;
+  font-size: 18px;
+  color: #002855;
+  margin-bottom: 10px;
+}
+
+.user-type-dropdown {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #002855;
+  border-radius: 8px;
+  background-color: #f0f4f8;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Form Elements */
+.signup-form label {
+  display: block;
+  font-size: 16px;
+  color: #002855;
+  margin-bottom: 8px;
+}
+
+.signup-form input, .signup-form select, .signup-form textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+}
+
+.signup-form textarea {
+  resize: none;
+  height: 100px;
+}
+
+.signup-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #002855;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+  background-color: #004080;
+}
+
+/* Skill Section */
+.skill-section {
+  display: flex;
+  align-items: center;
+}
+
+.add-skill-btn {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #002855;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.add-skill-btn:hover {
+  background-color: #004080;
+}
+
+.selected-skills {
+  margin-bottom: 20px;
+}
+
+.skill-item {
+  display: inline-block;
+  background-color: #e6f7ff;
+  color: #333;
+  padding: 6px 10px;
+  border-radius: 20px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.remove-skill-btn {
+  background: transparent;
+  border: none;
+  color: #ff5a5f;
+  margin-left: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Login Link */
+.login-link {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.login-link a {
+  color: #002855;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}

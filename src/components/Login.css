@@ -1,0 +1,218 @@
+/* General container layout */
+.login-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f0f0f0;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Left section: Now with the new image and logo side by side */
+.left-section {
+  flex: 1;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  animation: slideInLeft 1.2s ease-out;
+}
+
+/* Container for both logo and new image b.png */
+.image-container {
+  display: flex;
+  align-items: center;
+}
+
+.left-section {
+  display: flex;
+  justify-content: flex-end; /* Aligns items to the right */
+  align-items: center; /* Aligns items vertically */
+  padding-right: 90px; /* Adjust spacing from the right edge */
+}
+
+.left-section .logo {
+  height: 100px;
+  width: 100px; /* Adjust size as needed */
+  animation: fadeIn 1.5s ease-in-out;
+  margin-top: 290px;
+  /* Adds spacing between the .b-image and .logo */
+}
+
+.left-section .b-image {
+  width: 290px; /* Adjust size as needed */
+  height: 150px;
+  animation: fadeIn 1.5s ease-in-out;
+  margin-top: 370px;
+  margin-left: -700px;
+}
+
+
+/* Ball animation at the bottom */
+.left-section .ball {
+  position: absolute;
+  bottom: 10px;
+  width: 500px;
+  animation: bounce 2s infinite;
+}
+
+/* Right section */
+.right-section {
+  flex: 1;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.login-box {
+  background-color: #2d3b56;
+  padding: 40px;
+  border-radius: 15px;
+  color: white;
+  width: 350px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  animation: zoomIn 0.8s ease-out;
+}
+
+.login-box h2 {
+  margin-bottom: 25px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.login-box input:focus {
+  outline: none;
+  box-shadow: 0px 0px 8px #f44336;
+}
+
+/* User type container */
+.user-type-container {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Label for category selection */
+.user-type-label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+/* Buttons for user selection */
+.user-type {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.user-button {
+  padding: 8px 15px;
+  background-color: #555;
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, transform 0.2s;
+  font-size: 14px;
+}
+
+.user-button:hover {
+  background-color: #777;
+}
+
+.user-button.active {
+  background-color: #f44336;
+  border-color: #f44336;
+  transform: scale(0.98);
+}
+
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  background-color: #746969;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-box button:hover {
+  background-color: #f44336;
+  transform: scale(1.05);
+}
+
+.forgot-password, .signup-link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.forgot-password a, .signup-link a {
+  color: #e3e3e3;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.forgot-password a:hover, .signup-link a:hover {
+  color: #ffffff;
+}
+
+/* Animations */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
